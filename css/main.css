@@ -22,7 +22,7 @@ body {
 /*LOGO*/
 
 .logo {
-	width: 80%;
+	width: 100%;
 	max-width: 420px;
 	margin-bottom: 60px;
 }
@@ -111,7 +111,7 @@ input {
 	display: block;
 	border-radius: 0;
 	width: 190px;
-	font-size: 20px;
+	font-size: 16px;
 	margin: 10px auto;
 }
 
@@ -162,7 +162,7 @@ input.button:hover,
 }
 
 input.button {
-	font-size: 28px;
+	font-size: 24px;
 }
 
 /*FOOTER*/
@@ -234,7 +234,7 @@ h3 {
 	
 	.logo,
 	input {
-		width: 100%;
+		width: 80%;
 	}
 
 	h1 {
@@ -250,5 +250,8 @@ h3 {
 /*XX small devices (portrait phones, less than 420px)*/
 @media (max-width: 420px) {
 
+	input.button {
+		font-size: 16px;
+	}
 }
 
