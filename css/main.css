@@ -1,0 +1,252 @@
+body {
+	color: #fff;
+	background-color: #000;
+	font-family:'ITC Avant Garde GothicW01BdObl';
+	text-align: center;
+	background-image: url(../img/sunday_sessions.jpg);
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*LOGO*/
+
+.logo {
+	width: 80%;
+	max-width: 420px;
+	margin-bottom: 60px;
+}
+
+/*GRID*/
+
+.date {
+	max-width: 30%;
+	margin: 0 auto;
+}
+
+.show-cont {
+	position: relative;
+}
+
+.show {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+  	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+}
+
+.align-self-center {
+	margin: 5vh 0;
+}
+
+/*ANIMATION*/
+
+@keyframes rotating
+	{
+	from
+		{
+		transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	to
+		{
+		transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		}
+	}
+@-webkit-keyframes rotating
+	{
+	from
+		{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	to
+		{
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		}
+	}
+
+.date:hover {
+	-webkit-animation: rotating 1.5s linear infinite;
+	-moz-animation: rotating 1.5s linear infinite;
+	-ms-animation: rotating 1.5s linear infinite;
+	-o-animation: rotating 1.5s linear infinite;
+	animation: rotating 1.5s linear infinite;
+  
+}
+
+/*SIGNUP*/
+
+input,
+.btn-primary {
+	border: none;
+}
+
+input {
+	width: 320px;
+}
+
+.btn-primary {
+	display: block;
+	border-radius: 0;
+	width: 190px;
+	font-size: 20px;
+	margin: 10px auto;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+	background-color: #000;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0,0,0,.5);
+}
+
+.btn-primary.disabled {
+	background-color: #fff;
+	color: #000;
+	opacity: 0.8;
+}
+
+input.email {
+	font-family: 'Space Mono', monospace;
+	text-align: center;
+	background-color: transparent;
+	border-bottom: 1px dotted #fff;
+	margin-bottom: 8px;
+	color: #fff !important;
+}
+
+input.email::placeholder {
+	color: #fff;
+	opacity: 0.6;
+}
+
+input.email:focus {
+	color: #fff;
+}
+
+input.button,
+.btn-primary {
+	color: #000;
+	background-color: #fff;
+	padding: 4px 32px;
+}
+
+input.button:hover,
+.btn-primary:hover {
+	background-color: #ccc;
+}
+
+input.button {
+	font-size: 28px;
+}
+
+/*FOOTER*/
+
+footer {
+	font-family: 'Space Mono', monospace;
+	width: 100%;
+	font-size: 12px;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+.socials img {
+	width: 30px;
+	margin: 24px 4px 16px;
+}
+
+
+/*TYPOGRAPHY*/
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h1, h2 {
+	margin-top: 4vh;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
+
+	.date {
+		max-width: 70%;
+	}
+
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) { 
+
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+	.hide {
+		display: none;
+	}
+
+	h3,
+	.btn-primary {
+		font-size: 24px;
+	}
+
+	.btn-primary {
+		width: 80%;
+	}
+	
+	.logo,
+	input {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 44px;
+	}
+
+	.col-md-4 {
+		margin: 24px 0;
+	}
+
+}
+
+/*XX small devices (portrait phones, less than 420px)*/
+@media (max-width: 420px) {
+
+}
+
