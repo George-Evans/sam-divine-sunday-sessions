@@ -5,27 +5,26 @@ body {
 	font-weight: bold;
     font-style: normal;
 	text-align: center;
-	/* background-image: url(../img/sunday_sessions.jpg);
+	background-image: url(../img/sunday_sessions.jpg);
 	background-size: cover;
 	background-position: top;
-	background-attachment: fixed;
-	background-repeat: no-repeat; */
+	background-attachment: scroll;
+	background-repeat: no-repeat;
 	position: relative;
 	/* overflow-x: hidden; */
 }
 
-.background {
-	position: fixed;
-	top: -50%;
+/* .background {
+	position: absolute;
+	top: 0;
 	left: 50%;
 	z-index: -1;
 	height: 100vh;
 	width: auto;
 	transform: translate(-50%, 0);
-}
+} */
 
 .container {
-	margin-top: 10vh;
 	z-index: 5;
 }
 
@@ -35,6 +34,7 @@ body {
 	width: 100%;
 	max-width: 420px;
 	margin-bottom: 60px;
+	margin-top: 10vh;
 }
 
 /*GRID*/
